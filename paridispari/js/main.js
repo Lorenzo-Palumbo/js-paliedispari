@@ -1,10 +1,7 @@
 var pariDispari = prompt('Scegli pari o dispari');
-var numeroScelto = prompt('Inserire numero da 1 a 5');
+var numeroScelto = parseInt(prompt('Inserire numero da 1 a 5'));
 var numero = generaRandom();
-
-if (pariDispari !== 'pari' || !== 'dispari') {
-    console.log('Inserire pari o dispari');
-} else {
+console.log(numero);
 
 var numeriSommati = numeroScelto + numero;
 if (numeriSommati % 2 == 0 && pariDispari == 'pari') {
@@ -19,4 +16,15 @@ function generaRandom() {
     var numeroRandom = Math.floor((Math.random() * 5) + 1);
     return numeroRandom;
 }
+
+
+//funzione per pari e dispari
+
+/*
+function pariDispari(val){
+    if (val % 2 === 0) {
+        return 'pari';
+    }                     non c'è bisogno dell'else quando ci sono solo due ipotesi
+    return 'dispari'
 }
+*/
